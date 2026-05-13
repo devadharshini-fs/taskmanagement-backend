@@ -52,7 +52,7 @@ public class SecurityConfig {
                                 "/api/employees",
                                 "/api/teams"
                         ).permitAll()
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
 
                 .sessionManagement(session ->
