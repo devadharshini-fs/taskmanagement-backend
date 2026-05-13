@@ -24,7 +24,7 @@ public class TaskInfo {
     private String priority;
 
     private boolean status = false;
-    
+
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private EmployeeInfo assignee;
