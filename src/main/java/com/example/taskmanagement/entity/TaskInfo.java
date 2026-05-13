@@ -21,8 +21,10 @@ public class TaskInfo {
 
     private int noOfDays;
 
-    private boolean status = false;
+    private String priority;
 
+    private boolean status = false;
+    
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private EmployeeInfo assignee;
