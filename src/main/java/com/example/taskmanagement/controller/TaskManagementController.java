@@ -111,6 +111,10 @@ public class TaskManagementController {
         taskRepo.deleteById(id);
         return "Task deleted successfully";
     }
+    @GetMapping("/health")
+    public String health() {
+        return "Backend is awake";
+    }
 
     // Login API
     @PostMapping("/login")
